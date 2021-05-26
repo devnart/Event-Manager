@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/event.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules\@fortawesome\fontawesome-free\css\all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu">
+        <div class="logo">
+          <img src="img/logo.svg" alt="logo" />
+        </div>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="annonecement.html">Annonecement</a></li>
+        </ul>
+        <div class="user">
+          <button>suggest an event</button>
+          <div class="userAvatar">
+            <img src="img/avatar.jpg" alt="Avatar" />
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <section class="hero">
+        <div class="content">
+          <h1>SATURDAY AT YOUCODE</h1>
+        </div>
+        <div class="hero-img">
+          <img src="img/hero.png" alt="" />
+        </div>
+      </section>
+      <section class="details">
+          <article>
+              <h2 class="section-title">
+                  About The Event
+              </h2>
+              <p style="line-height: 1.2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis vel perferendis, aspernatur soluta minima suscipit? Dolores dolore nam at voluptatibus, officiis voluptatum repellendus debitis, tempora laboriosam quisquam voluptate a.</p>
+              <h2 class="section-title">
+                Speakers
+            </h2>
+              <div class="speakers row">
+                <div class="column">
+                    <div class="img-container">
+                        <img src="img/j.png" alt="">
+                    </div>
+                    <h5>John Doe</h5>
+                    <h6>CEO of Neugran</h5>
+                </div>
+                <div class="column">
+                    <div class="img-container">
+                        <img src="img/2.png" alt="">
+                    </div>
+                    <h5>Natalia Ber</h5>
+                    <h6>HR at Sigma</h5>
+                </div>
+            </div>
+          </article>
+          <aside>
+              <div class="time">
+                  <div class="place">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p class="icon-title">Agora</p>
+                  </div>
+                  <div class="hour">
+                    <i class="fas fa-clock"></i>
+                    <p class="icon-title">17:45</p>
+                  </div>
+              </div>
+              <div class="book">
+                  <div id="left"></div>
+                  <p class="icon-title">34/45</p>
+                  <p>Places Left</p>
+                  <button>Book Now</button>
+              </div>
+          </aside>
+      </section>
+    </div>
+    <footer>
+        <img src="img/logo_white.svg" alt="" />
+      </footer>
+      <script src="node_modules\progressbar.js\dist\progressbar.min.js"></script>
+      <!-- <script src="js/main.js"></script> -->
+      <script>
+            function makeCircle(selector,percent = 1.0,tColor='#fff') {
+
+if(percent <=0.5) {
+    var sColor = 'rgb(11, 243, 23)'
+}else if(percent <=0.75 && percent >0.5) {
+    var sColor = '#E97636'
+
+}else {
+    var sColor = 'rgb(243, 11, 11)'
+
+}
+var bar = new ProgressBar.Circle(selector, {
+
+    color: tColor,
+    // This has to be the same size as the maximum width to
+    // prevent clipping
+    strokeWidth: 10,
+    trailWidth: 1,
+    easing: 'easeInOut',
+    duration: 1400,
+    text: {
+      autoStyleContainer: false
+    },
+    from: { color: sColor, width: 1 },
+    to: { color: sColor, width: 10 },
+    // Set default step function for all animate calls
+    step: function(state, circle) {
+      circle.path.setAttribute('stroke', state.color);
+      circle.path.setAttribute('stroke-lincap', 'round');
+  
+      var value = Math.round(circle.value() * 100) + '%';
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+  
+    }
+  });
+  bar.text.style.fontFamily = '"MohrRounded", Helvetica, sans-serif';
+  bar.text.style.fontSize = '1.5rem';
+  bar.text.style.fontWeight = '700';
+  
+  bar.animate(percent);  // Number from 0.0 to 1.0
+
+}
+
+makeCircle('#left',0.75,'#000497')
+
+      </script>
+  </body>
+</html>

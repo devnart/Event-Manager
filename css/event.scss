@@ -1,0 +1,124 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.hero {
+  height: 420px;
+  margin-bottom: 50px;
+}
+section.details {
+  margin: 50px 0;
+  display: flex;
+  article {
+    flex: 2;
+
+    p {
+      color: $grey_grey;
+      width: 90%;
+    }
+  }
+  .row {
+    display: flex;
+    gap: 30px;
+  }
+  .column {
+    @include f();
+    text-align: center;
+    .img-container {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        object-fit: cover;
+      }
+    }
+    h5 {
+      font-family: "MohrRounded";
+      font-weight: bold;
+      color: $primary;
+      font-size: 18px;
+      margin: 5px 0;
+    }
+    h6 {
+      color: #9b9b9b;
+      font-size: 0.9rem;
+      font-family: "MohrRounded";
+      font-weight: 500;
+    }
+  }
+}
+
+aside {
+  flex: 1;
+  margin-left: 20px;
+  .icon-title {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 20px;
+    color: $grey_grey;
+    font-family: "MohrRounded", sans-serif;
+  }
+  .time {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba($color: #000000, $alpha: 0.06);
+    // border: 2px solid $primary;
+
+    .place,
+    .hour {
+      text-align: center;
+      i {
+        color: $primary;
+        font-size: 2.5rem;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .book {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 16px rgba($color: #000000, $alpha: 0.06);
+    p {
+        margin: 30px 0 10px 0;
+      color: $primary;
+    }
+    p:last-of-type {
+      color: #d4d4d4;
+      margin: 0;
+    }
+    button {
+      @include button();
+      width: 100%;
+      font-size: 1.3rem;
+      font-family: "MohrRounded";
+      line-height: 1;
+      padding-bottom: 22px;
+      margin-top: 30px;
+    }
+  }
+}
+#left {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  font-family: "MohrRounded";
+
+  svg {
+    path {
+      stroke-linecap: round;
+    }
+  }
+}
+.section-title {
+  @include sectionTitle();
+  font-weight: bold;
+  color: $primary;
+  font-size: 1.4rem;
+}

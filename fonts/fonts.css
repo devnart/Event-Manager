@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'MohrRounded';
+    src: url('MohrRounded-Regular.woff2') format('woff2'),
+        url('MohrRounded-Regular.woff') format('woff'),
+        url('MohrRounded-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MohrRounded';
+    src: url('MohrRounded-Medium.woff2') format('woff2'),
+        url('MohrRounded-Medium.woff') format('woff'),
+        url('MohrRounded-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MohrRounded';
+    src: url('MohrRounded-Black.woff2') format('woff2'),
+        url('MohrRounded-Black.woff') format('woff'),
+        url('MohrRounded-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MohrRounded';
+    src: url('MohrRounded-Bold.woff2') format('woff2'),
+        url('MohrRounded-Bold.woff') format('woff'),
+        url('MohrRounded-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
