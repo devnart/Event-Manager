@@ -1,118 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Event Manager</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="fonts/fonts.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules\@fortawesome\fontawesome-free\css\all.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="parent">
-      <aside>
-        <div class="logo">
-          <img src="img/logo.svg" alt="" />
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#"
-                ><img src="img/icons/dashboard.svg" alt="" />Dashboard</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/icons/messages.svg" alt="" />Messages</a
-              >
-            </li>
-            <li>
-              <a href="#"><img src="img/icons/user.svg" alt="" />Users</a>
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/icons/calendar.svg" alt="" />Calendar</a
-              >
-            </li>
-            <li>
-              <a href="#"
-                ><img src="img/icons/notification.svg" alt="" />Annonecement</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <div class="logout">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Manager</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="fonts/fonts.css" />
+  <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.min.css" />
+</head>
+
+<body>
+  <div class="parent">
+    <aside>
+      <div class="logo">
+        <img src="img/logo.svg" alt="" />
+      </div>
+      <nav>
+        <ul>
           <li>
-            <a href="#"><img src="img/icons/exit.svg" alt="" />Exit to home</a>
+            <a href="#"><img src="img/icons/dashboard.svg" alt="" />Dashboard</a>
           </li>
+          <li>
+            <a href="#"><img src="img/icons/messages.svg" alt="" />Messages</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/user.svg" alt="" />Users</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/calendar.svg" alt="" />Calendar</a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icons/notification.svg" alt="" />Annonecement</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logout">
+        <li>
+          <a href="#"><img src="img/icons/exit.svg" alt="" />Exit to home</a>
+        </li>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <div>
+          <button>Add Event</button>
+          <button>Add Annonce</button>
         </div>
-      </aside>
-      <main>
-        <header>
-          <div>
-            <button>Add Event</button>
-            <button>Add Annonce</button>
-          </div>
 
-          <div class="user">
-            <img src="img/avatar.jpg" alt="" />
+        <div class="user">
+          <img src="img/avatar.jpg" alt="" />
+        </div>
+      </header>
+      <section class="form">
+        <div class="form-card">
+          <h2>Add An Event</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+            ipsum dolor sit.
+          </p>
+        </div>
+        <form action="">
+          <div class="input-group">
+            <label for="event-title">Title</label>
+            <input type="text" name="eventTitle" id="event-title" />
           </div>
-        </header>
-        <section class="form">
-          <div class="form-card">
-            <h2>Add An Event</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
-              ipsum dolor sit.
-            </p>
+          <div class="input-group col-2">
+            <div class="input-inner">
+              <label for="where">Where?</label>
+              <input type="text" name="where" id="where" />
+            </div>
+            <div class="input-inner">
+              <label for="when">When?</label>
+              <input type="text" name="when" id="when" />
+            </div>
           </div>
-          <form action="">
-            <div class="input-group">
-              <label for="event-title">Title</label>
-              <input type="text" name="eventTitle" id="event-title" />
+          <div class="input-group col-2">
+            <div class="input-inner">
+              <label for="maxPlaces">Max Places</label>
+              <input type="text" name="maxPlaces" id="maxPlaces" />
             </div>
-            <div class="input-group col-2">
-              <div class="input-inner">
-                <label for="where">Where?</label>
-                <input type="text" name="where" id="where" />
+            <div class="input-inner">
+              <label for="class">Class</label>
+              <select name="class" id="class">
+                <option value="all">All</option>
+                <option value="alan turing">Alan Turing</option>
+                <option value="margaret hamilton">Mrgaret Hamilton</option>
+                <option value="ada lovelace">Ada Lovelace</option>
+              </select>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="event-description">Description</label>
+            <textarea name="eventDescription" id="event-description" cols="" rows="6"></textarea>
+          </div>
+          <div class="input-group">
+            <label for="speakers">Speakers</label>
+            <div class="speaker">
+              <button class="speaker-add border-radius">
+                <div class="speaker-add__icon">
+                  <img src="img/icons/Icon- Add.svg" alt="add icon">
+                </div>
+                <div class="speaker-add__text">add speaker</div>
+              </button>
+              <div class="speaker-input">
+                <div class="speaker-input__input speaker-input__name">
+                  <input type="text" placeholder="Name">
+                </div>
+                <div class="speaker-input__input speaker-input__description">
+                  <input type="text" placeholder="description">
+                </div>
+                <div class="speaker-input__img border-radius">
+                  <img class="speaker-input__img__img" src="img/icons/upload-file.svg" alt="upload file icon">
+                  <span class="speaker-input__img__text">image</span>
+                  <input class='speaker-input__img__input' type="file" name="speaker_images" id="speaker_images"
+                    class="speaker-input__img--input">
+                </div>
               </div>
-              <div class="input-inner">
-                <label for="when">When?</label>
-                <input type="text" name="when" id="when" />
-              </div>
             </div>
-            <div class="input-group col-2">
-              <div class="input-inner">
-                <label for="maxPlaces">Max Places</label>
-                <input type="text" name="maxPlaces" id="maxPlaces" />
-              </div>
-              <div class="input-inner">
-                <label for="class">Class</label>
-                <select name="class" id="class">
-                  <option value="all">All</option>
-                  <option value="alan turing">Alan Turing</option>
-                  <option value="margaret hamilton">Mrgaret Hamilton</option>
-                  <option value="ada lovelace">Ada Lovelace</option>
-                </select>
-              </div>
-            </div>
-            <div class="input-group">
-              <label for="event-description">Description</label>
-              <textarea name="eventDescription" id="event-description" cols="" rows="6"></textarea>
-              
-            </div>
-            <div class="input-group">
-              <label for="speakers">Speakers</label>
-              <textarea name="speakers" id="speakers" cols="" rows="6"></textarea>
-            </div>
-          </form>
-        </section>
-      </main>
-    </div>
-  </body>
+          </div>
+          <div class="submit">
+            <input type="submit" value="submit">
+          </div>
+  </div>
+  </div>
+  </div>
+  </form>
+  </section>
+  </main>
+  </div>
+</body>
+
 </html>

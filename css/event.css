@@ -1,164 +1,100 @@
 .hero {
   height: 420px;
-  margin-bottom: 50px;
-}
+  margin-bottom: 50px; }
 
 section.details {
   margin: 50px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-section.details article {
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-}
-
-section.details article p {
-  color: #6F6F6F;
-  width: 90%;
-}
-
-section.details .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-section.details .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-
-section.details .column .img-container {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-section.details .column .img-container img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-section.details .column h5 {
-  font-family: "MohrRounded";
-  font-weight: bold;
-  color: #3f26b8;
-  font-size: 18px;
-  margin: 5px 0;
-}
-
-section.details .column h6 {
-  color: #9b9b9b;
-  font-size: 0.9rem;
-  font-family: "MohrRounded";
-  font-weight: 500;
-}
+  display: flex; }
+  section.details article {
+    flex: 2; }
+    section.details article p {
+      color: #6F6F6F;
+      width: 90%; }
+  section.details .row {
+    display: flex;
+    gap: 30px; }
+  section.details .column {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    section.details .column .img-container {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden; }
+      section.details .column .img-container img {
+        object-fit: cover; }
+    section.details .column h5 {
+      font-family: "MohrRounded";
+      font-weight: bold;
+      color: #3f26b8;
+      font-size: 18px;
+      margin: 5px 0; }
+    section.details .column h6 {
+      color: #9b9b9b;
+      font-size: 0.9rem;
+      font-family: "MohrRounded";
+      font-weight: 500; }
 
 aside {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin-left: 20px;
-}
-
-aside .icon-title {
-  font-weight: bold;
-  margin: 10px;
-  font-size: 20px;
-  color: #6F6F6F;
-  font-family: "MohrRounded", sans-serif;
-}
-
-aside .time {
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border-radius: 10px;
-  padding: 20px;
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
-}
-
-aside .time .place,
-aside .time .hour {
-  text-align: center;
-}
-
-aside .time .place i,
-aside .time .hour i {
-  color: #3f26b8;
-  font-size: 2.5rem;
-  margin-bottom: 5px;
-}
-
-aside .book {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 10px;
-  padding: 30px 40px;
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
-}
-
-aside .book p {
-  margin: 30px 0 10px 0;
-  color: #3f26b8;
-}
-
-aside .book p:last-of-type {
-  color: #d4d4d4;
-  margin: 0;
-}
-
-aside .book button {
-  background-color: #3f26b8;
-  color: white;
-  padding: 15px 20px;
-  cursor: pointer;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  font-size: 1.3rem;
-  font-family: "MohrRounded";
-  line-height: 1;
-  padding-bottom: 22px;
-  margin-top: 30px;
-}
+  flex: 1;
+  margin-left: 20px; }
+  aside .icon-title {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 20px;
+    color: #6F6F6F;
+    font-family: "MohrRounded", sans-serif; }
+  aside .time {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06); }
+    aside .time .place,
+    aside .time .hour {
+      text-align: center; }
+      aside .time .place i,
+      aside .time .hour i {
+        color: #3f26b8;
+        font-size: 2.5rem;
+        margin-bottom: 5px; }
+  aside .book {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06); }
+    aside .book p {
+      margin: 30px 0 10px 0;
+      color: #3f26b8; }
+    aside .book p:last-of-type {
+      color: #d4d4d4;
+      margin: 0; }
+    aside .book button {
+      background-color: #3f26b8;
+      color: white;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: 700;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 1.3rem;
+      font-family: "MohrRounded";
+      line-height: 1;
+      padding-bottom: 22px;
+      margin-top: 30px; }
 
 #left {
   position: relative;
   width: 90px;
   height: 90px;
-  font-family: "MohrRounded";
-}
-
-#left svg path {
-  stroke-linecap: round;
-}
+  font-family: "MohrRounded"; }
+  #left svg path {
+    stroke-linecap: round; }
 
 .section-title {
   font-family: "MohrRounded";
@@ -168,6 +104,6 @@ aside .book button {
   font-weight: 500;
   font-weight: bold;
   color: #3f26b8;
-  font-size: 1.4rem;
-}
+  font-size: 1.4rem; }
+
 /*# sourceMappingURL=event.css.map */

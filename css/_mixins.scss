@@ -1,23 +1,29 @@
 @mixin f {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  @mixin button {
-    background-color: $primary;
-    color: white;
-    padding: 15px 20px;
-    // height: 58px;
-    cursor: pointer;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  @mixin sectionTitle {
-    font-family: "MohrRounded";
-    font-size: 20px;
-    color: $dark_grey;
-    margin: 20px 0;
-    font-weight: 500;
-  }
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin button {
+  background-color: $primary;
+  color: white;
+  padding: 15px 20px;
+  // height: 58px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+}
+
+@mixin sectionTitle {
+  font-family: "MohrRounded";
+  font-size: 20px;
+  color: $dark_grey;
+  margin: 20px 0;
+  font-weight: 500;
+}
+@mixin flex($justify-content, $align-item, $direction: row) {
+  display: flex;
+  align-items: $align-item;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+}

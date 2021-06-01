@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.92" height="41.508" viewBox="0 0 42.92 41.508">
+  <defs>
+    <ellipse id="ellipse-1" cx="4.46" cy="3.754" rx="21.46" ry="20.754"/>
+    <mask id="mask-2" x="-17" y="-17" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="42.92" height="41.508" x="-17" y="-17" fill="black"/>
+      <use fill="white" xlink:href="#ellipse-1"/>
+    </mask>
+  </defs>
+  <g transform="translate(17 17)">
+    <use fill-opacity="0" stroke="rgb(63,38,184)" stroke-width="8" mask="url(#mask-2)" xlink:href="#ellipse-1"/>
+    <path fill="none" stroke="rgb(63,38,184)" stroke-width="4" d="M4.46196831 12.75410115v-18.00004"/>
+    <path fill="none" stroke="rgb(63,38,184)" stroke-width="4" d="M13.47090596 3.7540862l-18.00896294-.0000101"/>
+  </g>
+</svg>
