@@ -730,7 +730,7 @@ section.form {
 .speaker {
   @include flex(space-between, center, row-reverse);
   &-add {
-    border: none;
+    border: 2px solid transparent;
     outline: none;
     background-color: $light_blue;
     padding: 50px 25px;

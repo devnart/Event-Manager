@@ -633,7 +633,7 @@ section.form {
   justify-content: space-between;
   flex-direction: row-reverse; }
   .speaker-add {
-    border: none;
+    border: 2px solid transparent;
     outline: none;
     background-color: #f5f6ff;
     padding: 50px 25px;
