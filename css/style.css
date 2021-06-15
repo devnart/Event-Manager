@@ -749,9 +749,7 @@ section.form {
     color: #3f26b8;
     font-weight: 500; }
 
-footer {
-  position: sticky;
-  left: 0;
-  bottom: 0; }
+.full-width {
+  width: 100% !important; }
 
 /*# sourceMappingURL=style.css.map */
