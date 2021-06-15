@@ -520,6 +520,8 @@ section.form {
       padding-left: 45px;
       padding-right: 45px;
       font-family: "MohrRounded"; }
+    section.form form textarea {
+      resize: vertical; }
     section.form form .submit {
       display: flex;
       justify-content: flex-end; }
@@ -697,5 +699,59 @@ section.form {
         width: 100%;
         height: 100%;
         opacity: 0; }
+
+.submit {
+  justify-content: space-between !important; }
+
+.days {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px; }
+
+.month {
+  font-weight: 700;
+  margin-top: 75px; }
+  .month-name {
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 25px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: center; }
+    .month-name::after {
+      content: "";
+      flex-grow: 1;
+      height: 2px;
+      background-color: #a6a6a6; }
+
+.day {
+  display: flex;
+  column-gap: 75px;
+  align-items: center; }
+  .day-box {
+    border: 2px solid #3f26b8;
+    border-radius: 5px;
+    padding: 12.5px 20px;
+    text-align: center; }
+    .day-box-day {
+      color: #3f26b8;
+      font-size: 35px;
+      font-weight: 900; }
+    .day-box-month {
+      padding-top: 5px;
+      color: rgba(63, 38, 184, 0.3); }
+  .day-description {
+    font-size: 25px;
+    color: #3f26b8;
+    font-weight: 500; }
+
+footer {
+  position: sticky;
+  left: 0;
+  bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */

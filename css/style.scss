@@ -590,6 +590,9 @@ section.form {
       padding-right: 45px;
       font-family: "MohrRounded";
     }
+    textarea {
+      resize: vertical;
+    }
     .submit {
       display: flex;
       justify-content: flex-end;
@@ -805,4 +808,69 @@ section.form {
       }
     }
   }
+}
+.submit {
+  justify-content: space-between !important;
+}
+// announcement :
+.days {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.month {
+  font-weight: 700;
+  margin-top: 75px;
+  &-name {
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 25px;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+    justify-content: center;
+    &::after {
+      content: "";
+      flex-grow: 1;
+      height: 2px;
+      background-color: #a6a6a6;
+    }
+  }
+}
+
+.day {
+  display: flex;
+  column-gap: 75px;
+  align-items: center;
+  &-box {
+    border: 2px solid $primary;
+    border-radius: 5px;
+    padding: 12.5px 20px;
+    text-align: center;
+    &-day {
+      color: $primary;
+      font-size: 35px;
+      font-weight: 900;
+    }
+    &-month {
+      padding-top: 5px;
+      color: rgba($primary, 0.3);
+    }
+  }
+  &-description {
+    font-size: 25px;
+    color: $primary;
+    font-weight: 500;
+  }
+}
+
+// footer :
+
+footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
 }
