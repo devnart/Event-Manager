@@ -4,91 +4,96 @@
 
 section.details {
   margin: 50px 0;
-  display: flex; }
-  section.details article {
-    flex: 2; }
-    section.details article p {
-      color: #6F6F6F;
-      width: 90%; }
-  section.details .row {
-    display: flex;
-    gap: 30px; }
-  section.details .column {
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    section.details .column .img-container {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      overflow: hidden; }
-      section.details .column .img-container img {
-        object-fit: cover; }
-    section.details .column h5 {
-      font-family: "MohrRounded";
-      font-weight: bold;
-      color: #3f26b8;
-      font-size: 18px;
-      margin: 5px 0; }
-    section.details .column h6 {
-      color: #9b9b9b;
-      font-size: 0.9rem;
-      font-family: "MohrRounded";
-      font-weight: 500; }
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px; }
 
-aside {
-  flex: 1;
-  margin-left: 20px; }
-  aside .icon-title {
-    font-weight: bold;
-    margin: 10px;
-    font-size: 20px;
-    color: #6F6F6F;
-    font-family: "MohrRounded", sans-serif; }
-  aside .time {
-    margin-bottom: 30px;
+.event-about {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px; }
+  .event-about__description {
+    line-height: 1.2; }
+  .event-about__animators {
     display: flex;
-    justify-content: space-around;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06); }
-    aside .time .place,
-    aside .time .hour {
-      text-align: center; }
-      aside .time .place i,
-      aside .time .hour i {
+    column-gap: 50px; }
+    .event-about__animators .column {
+      text-align: start; }
+  .event-about .img-container {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 15px 0; }
+    .event-about .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .event-about h5 {
+    color: #3f26b8;
+    font-size: 1.4rem; }
+  .event-about h6 {
+    font-size: 0.85rem;
+    color: rgba(70, 70, 70, 0.75); }
+
+.event-details {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px; }
+  .event-details__date {
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    column-gap: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(70, 70, 70, 0.1); }
+    .event-details__date .detail {
+      text-align: center;
+      padding: 25px; }
+      .event-details__date .detail .fas {
+        font-size: 45px;
         color: #3f26b8;
-        font-size: 2.5rem;
-        margin-bottom: 5px; }
-  aside .book {
+        margin-bottom: 25px; }
+      .event-details__date .detail .icon-title {
+        font-size: 20px;
+        color: rgba(70, 70, 70, 0.75); }
+  .event-details__booking {
+    display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    display: flex;
-    border-radius: 10px;
-    padding: 30px 40px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06); }
-    aside .book p {
-      margin: 30px 0 10px 0;
-      color: #3f26b8; }
-    aside .book p:last-of-type {
-      color: #d4d4d4;
-      margin: 0; }
-    aside .book button {
+    width: 350px;
+    row-gap: 12.5px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(70, 70, 70, 0.1);
+    padding: 25px;
+    margin-left: auto;
+    text-align: center; }
+    .event-details__booking .event-infos {
+      margin: 15px 0; }
+    .event-details__booking .icon-title {
+      font-size: 32.5px;
+      font-weight: 500;
+      color: #3f26b8;
+      margin-bottom: 15px; }
+    .event-details__booking .left-place {
+      font-size: 20px;
+      color: rgba(70, 70, 70, 0.75); }
+    .event-details__booking button {
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      display: block;
       background-color: #3f26b8;
       color: white;
-      padding: 15px 20px;
-      cursor: pointer;
-      font-weight: 700;
-      border: none;
-      border-radius: 5px;
-      width: 100%;
-      font-size: 1.3rem;
-      font-family: "MohrRounded";
-      line-height: 1;
-      padding-bottom: 22px;
-      margin-top: 30px; }
+      padding: 15px;
+      font-size: 17.5px; }
+      .event-details__booking button:active {
+        outline: 2px solid rgba(63, 38, 184, 0.5); }
 
 #left {
+  margin: 0 auto;
   position: relative;
   width: 90px;
   height: 90px;
