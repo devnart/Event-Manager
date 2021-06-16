@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.138" height="43.011" viewBox="0 0 43.138 43.011">
+  <defs>
+    <rect id="rect-1" width="43.138" height="43.011" x="0" y="0"/>
+    <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="userSpaceOnUse">
+      <rect width="43.138" height="43.011" x="0" y="0" fill="black"/>
+      <use fill="white" xlink:href="#rect-1"/>
+    </mask>
+  </defs>
+  <g>
+    <use fill="none" xlink:href="#rect-1"/>
+    <g mask="url(#mask-2)">
+      <g opacity="0">
+        <rect width="42.891" height="42.991" x="0" y="0" fill="rgb(252,252,252)" rx="0" ry="0"/>
+      </g>
+      <g>
+        <path fill="none" stroke="rgb(63,38,184)" stroke-dasharray="0 0 0 0" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M19.77828511 6.68335517H6.66603447c-2.07272206 0-3.75299528 1.68418764-3.75299528 3.76173837v26.27842947c-2e-8.99767497.39540368 1.95448785 1.09922681 2.65995065.70382313.70546281 1.65841216 1.1017877 2.65376839 1.10178772h26.21913994c.99535623 0 1.94994527-.39632487 2.65376841-1.10178766.70382314-.70546279 1.09922687-1.66227566 1.09922687-2.65995071V23.58072567"/>
+        <path fill="none" stroke="rgb(63,38,184)" stroke-dasharray="0 0 0 0" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5" d="M33.82699743 3.865634c1.55158052-1.5551951 4.06718955-1.55519509 5.61877005 3e-8 1.5515805 1.55519511 1.55158051 4.07666459 2e-8 5.6318597L21.65120847 27.33350753l-7.49169343 1.87907788 1.87292336-7.51093761L33.82699743 3.865634z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="node_modules\@fortawesome\fontawesome-free\css\all.min.css" />
+</head>
+
+<body>
+    <div class="parent">
+        <aside>
+            <div class="logo">
+                <img src="img/logo.svg" alt="" />
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"><img src="img/icons/dashboard.svg" alt="" />Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/messages.svg" alt="" />Messages</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/user.svg" alt="" />Users</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/calendar.svg" alt="" />Calendar</a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/icons/notification.svg" alt="" />announcement</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logout">
+                <li>
+                    <a href="#"><img src="img/icons/exit.svg" alt="" />Exit to home</a>
+                </li>
+            </div>
+        </aside>
+        <main>
+            <header>
+                <div>
+                    <button>Add Event</button>
+                    <button>Add Announce</button>
+                </div>
+
+                <div class="user">
+                    <img src="img/avatar.jpg" alt="" />
+                </div>
+            </header>
+            <div class="dashboard">
+                <div class="general-statistics">
+                    <div class="statistic statistic--total-event">
+                        <div class="statistic__title">
+                            Total Event Published
+                        </div>
+                        <div class="statistic__result">
+                            67
+                        </div>
+                    </div>
+                    <div class="statistic statistic--users">
+                        <div class="statistic__title">
+                            Total Event Published
+                        </div>
+                        <div class="statistic__result">
+                            67
+                        </div>
+                    </div>
+                    <div class="statistic statistic--ideas">
+                        <div class="statistic__title">
+                            Total Event Published
+                        </div>
+                        <div class="statistic__result">
+                            67
+                        </div>
+                    </div>
+                </div>
+                <div class="events-list">
+                    <div class="events-title">
+                        Recently Added Events
+                    </div>
+                    <div class="event-box">
+                        <div class="table-header">
+                            <div class="event-image">image</div>
+                            <div class="event-title">title</div>
+                            <div class="event-seats">seats</div>
+                            <div class="event-place">where</div>
+                            <div class="event-date_added">date added</div>
+                        </div>
+                        <div class="body-table">
+                            <div class="event-row">
+                                <div class="event-image">
+                                    <img src="img/AladdinCave.jpg" alt="event image">
+                                </div>
+                                <div class="event-title">National Women Day</div>
+                                <div class="event-seats">45</div>
+                                <div class="event-place">agora</div>
+                                <div class="event-date_added">10-09-2021</div>
+                                <div class="event-action">
+                                    <div class="delete">
+                                        <img src="img/icons/delete.svg" alt="delete">
+                                    </div>
+                                    <div class="edit">
+                                        <img src="img/icons/edit.svg" alt="edit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

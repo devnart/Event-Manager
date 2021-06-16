@@ -752,4 +752,92 @@ section.form {
 .full-width {
   width: 100% !important; }
 
+.dashboard {
+  width: 85%;
+  margin: 0 auto; }
+  .dashboard .general-statistics {
+    margin: 50px 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 25px; }
+  .dashboard .statistic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    column-gap: 15px;
+    border-radius: 10px; }
+    .dashboard .statistic > div {
+      flex-basis: 50%; }
+    .dashboard .statistic__title {
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.5); }
+    .dashboard .statistic__result {
+      font-weight: 900;
+      font-size: 75px;
+      color: white; }
+    .dashboard .statistic--users {
+      background-color: #89d5ff; }
+    .dashboard .statistic--total-event {
+      background-color: #9a89ff; }
+    .dashboard .statistic--ideas {
+      background-color: #ff89b3; }
+
+.events-list .events-title {
+  font-size: 22.5px;
+  font-weight: 500;
+  color: #3f26b8; }
+.events-list .event-box {
+  margin: 50px 0; }
+  .events-list .event-box .table-header {
+    padding: 25px 10px;
+    font-size: 18.5px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #4d4d4d; }
+  .events-list .event-box .body-table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px; }
+  .events-list .event-box .table-header,
+  .events-list .event-box .event-row {
+    grid-column-gap: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(7, 1fr); }
+    .events-list .event-box .table-header .event-image,
+    .events-list .event-box .event-row .event-image {
+      grid-column: 1 / 1 span; }
+    .events-list .event-box .table-header .event-title,
+    .events-list .event-box .event-row .event-title {
+      grid-column: 2 / 2 span; }
+    .events-list .event-box .table-header .event-seats,
+    .events-list .event-box .event-row .event-seats {
+      grid-column: 4 / 1 span; }
+    .events-list .event-box .table-header .event-place,
+    .events-list .event-box .event-row .event-place {
+      grid-column: 5 / 1 span; }
+    .events-list .event-box .table-header .event-date_added,
+    .events-list .event-box .event-row .event-date_added {
+      grid-column: 6 / 1 span; }
+    .events-list .event-box .table-header .event-action,
+    .events-list .event-box .event-row .event-action {
+      grid-column: 7; }
+  .events-list .event-box .event-row {
+    font-size: 19.5px;
+    color: rgba(77, 77, 77, 0.85);
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px; }
+    .events-list .event-box .event-row .event-image img {
+      border-radius: 10px;
+      width: 80px;
+      height: 80px;
+      object-fit: cover; }
+    .events-list .event-box .event-row .event-action {
+      display: flex;
+      justify-content: center;
+      column-gap: 15px; }
+
 /*# sourceMappingURL=style.css.map */

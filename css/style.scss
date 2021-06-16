@@ -869,3 +869,110 @@ section.form {
 .full-width {
   width: 100% !important;
 }
+.dashboard {
+  width: 85%;
+  margin: 0 auto;
+  .general-statistics {
+    margin: 50px 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .statistic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    column-gap: 15px;
+    border-radius: 10px;
+    & > div {
+      flex-basis: 50%;
+    }
+    &__title {
+      line-height: 1.7;
+      color: rgba(white, 0.5);
+    }
+    &__result {
+      font-weight: 900;
+      font-size: 75px;
+      color: white;
+    }
+    &--users {
+      background-color: #89d5ff;
+    }
+    &--total-event {
+      background-color: #9a89ff;
+    }
+    &--ideas {
+      background-color: #ff89b3;
+    }
+  }
+}
+.events-list {
+  .events-title {
+    font-size: 22.5px;
+    font-weight: 500;
+    color: $primary;
+  }
+  .event-box {
+    margin: 50px 0;
+    .table-header {
+      padding: 25px 10px;
+      font-size: 18.5px;
+      font-weight: 300;
+      text-transform: capitalize;
+      color: #4d4d4d;
+    }
+    .body-table {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    .table-header,
+    .event-row {
+      grid-column-gap: 15px;
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(7, 1fr);
+      .event-image {
+        grid-column: 1 / 1 span;
+      }
+      .event-title {
+        grid-column: 2 / 2 span;
+      }
+      .event-seats {
+        grid-column: 4 / 1 span;
+      }
+      .event-place {
+        grid-column: 5 / 1 span;
+      }
+      .event-date_added {
+        grid-column: 6 / 1 span;
+      }
+      .event-action {
+        grid-column: 7;
+      }
+    }
+    .event-row {
+      font-size: 19.5px;
+      color: rgba(#4d4d4d, 0.85);
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      .event-image {
+        img {
+          border-radius: 10px;
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+        }
+      }
+      .event-action {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+      }
+    }
+  }
+}
